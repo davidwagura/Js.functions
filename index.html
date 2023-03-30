@@ -15,7 +15,11 @@
             {{  kalenjinMyname }}<br>
             {{  kalenjinOurname }}<br>
             {{ totalMarks }}
-            {{ list }}
+      <ul>
+        <li  v-for="name in names">
+          {{ name }}
+        </li>
+      </ul>
      </div>
       <button @click="changeMessage">Change message</button>
       <button @click="getFullName">Full name</button>

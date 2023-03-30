@@ -4,6 +4,7 @@ p {
 }
 .input {
   background-color: pink;
+  font-size: 25px;
 }
 body {
   background: rgb(131,58,180);
