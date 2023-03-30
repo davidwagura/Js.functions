@@ -6,8 +6,14 @@ new Vue ({
     first_name:'David',
     second_name:'wagura',
     fullName: '',
-    english: '49',
-    computer: '70'
+    english: 49,
+    computer: 70,
+    names: [
+       'Evan You',
+       'John Lindquist',
+       'Jen Looper',
+       'Miriam Suzanne'
+     ]
   },
 
   computed: {
@@ -19,11 +25,15 @@ new Vue ({
       return 'kip'+ this.first_name
     },
 
+    list() {
+      return this.names
+    },
+
     kalenjinOurname() {
       return 'kip'+ this.second_name
     },
     totalMarks() {
-     return this.english  + this.computer
+      return this.english  + this.computer
     }
 
   },
