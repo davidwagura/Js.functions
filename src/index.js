@@ -8,7 +8,23 @@ new Vue ({
     fullName: ''
   },
 
-  computed: {},
+  computed: {
+    fname(){
+      return 'sijui'
+    },
+
+    kalenjinName(){
+      return 'kip'+ this.second_name
+    },
+
+    kalenjinMyname() {
+      return 'kip'+ this.first_name
+    },
+      kalenjinOurname() {
+        return 'kip'+ this.second_name
+      }
+
+  },
 
   methods: {
     changeMessage() {
@@ -21,7 +37,6 @@ new Vue ({
     newMethod(){
       console.log('testing')
     }
-
   }
 
 })
