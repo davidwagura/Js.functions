@@ -5,14 +5,12 @@ new Vue ({
     message: 'Hello vue!',
     first_name:'David',
     second_name:'wagura',
-    fullName: ''
+    fullName: '',
+    english: '49',
+    computer: '70'
   },
 
   computed: {
-    fname(){
-      return 'sijui'
-    },
-
     kalenjinName(){
       return 'kip'+ this.second_name
     },
@@ -20,9 +18,13 @@ new Vue ({
     kalenjinMyname() {
       return 'kip'+ this.first_name
     },
-      kalenjinOurname() {
-        return 'kip'+ this.second_name
-      }
+
+    kalenjinOurname() {
+      return 'kip'+ this.second_name
+    },
+    totalMarks() {
+     return this.english  + this.computer
+    }
 
   },
 
