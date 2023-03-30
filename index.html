@@ -3,12 +3,15 @@
   <head>
     <meta charset="utf-8">
     <title>Js.functions</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
   </head>
   <body>
     <div id="function">
       <h1> {{ message }} </h1>
-      <button @click:"changeMessage">Change message</button>
+            {{ fullName }}
+      <button @click="changeMessage">Change message</button>
+      <button @click="getFullName">Full name</button>
     </div>
-    <script type="text/javascript" href="./src/index.js"></script>
+    <script type="text/javascript" src="./src/index.js"></script>
   </body>
 </html>
